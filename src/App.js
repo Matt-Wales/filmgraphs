@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Navbar from './components/Navbar'
+import logomobile from './components/logomobile.svg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <Navbar />
       </header>
-    </div>
+      <main>
+        <div style={{ backgroundColor: '#1a1218', width: '100%', height: '2000px' }}>
+
+        </div>
+      </main>
+      <footer>
+        <div className='footer-container'>
+          <div className='footer'>
+            <div className='footer-logo'>
+              <img src={logomobile} alt='FilmGraphs logo' />
+            </div>
+            <div className='footer-contact-us'>
+              Contact Us
+            </div>
+            <div className='footer-text'>
+              © 2021 FilmGraphs
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
 
